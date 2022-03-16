@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilityHelper", "src\UtilityHelper\UtilityHelper.csproj", "{024CE86F-51B1-43E9-B73A-31B0A65DFFDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilityHelperTest", "UtilityHelperTest\UtilityHelperTest.csproj", "{31264B91-B164-45C0-84E5-7973AA135888}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D54B1998-6BCC-49FC-8DD6-AD739E7D3EFA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{024CE86F-51B1-43E9-B73A-31B0A65DFFDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024CE86F-51B1-43E9-B73A-31B0A65DFFDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024CE86F-51B1-43E9-B73A-31B0A65DFFDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024CE86F-51B1-43E9-B73A-31B0A65DFFDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31264B91-B164-45C0-84E5-7973AA135888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31264B91-B164-45C0-84E5-7973AA135888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31264B91-B164-45C0-84E5-7973AA135888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31264B91-B164-45C0-84E5-7973AA135888}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E618ABC8-5EE6-4588-903B-C3971F8EC8FD}
+	EndGlobalSection
+EndGlobal
