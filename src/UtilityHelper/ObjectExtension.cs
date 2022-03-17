@@ -43,10 +43,10 @@ public static class ObjectExtension
     }
 
     /// <summary>
-    /// 
+    /// Decompress data byte array and return memory stream
     /// </summary>
     /// <param name="data"></param>
-    /// <returns></returns>
+    /// <returns>memory stream</returns>
     public static MemoryStream DecompressMemoryStream(this byte[] data)
     {
         using (var compressedStream = new MemoryStream(data))
@@ -61,10 +61,9 @@ public static class ObjectExtension
     /// <summary>
     /// Number generator from new GUID 
     /// </summary>
-    /// <returns></returns>
+    /// <returns>string </returns>
     public static string GetNumberByGuid()
-    {
-
+    { 
         return GetNumberByGuid(Guid.NewGuid());
     }
     /// <summary>
@@ -83,7 +82,7 @@ public static class ObjectExtension
     /// </summary>
     /// <param name="arg">string GUID</param>
     /// <returns>string</returns>
-    public static string GetNumberByStringGuid(this string arg)
+    public static string GetNumberByGuid(this string arg)
     {
         var id = new Guid(arg);
         return GetNumberByGuid(id);

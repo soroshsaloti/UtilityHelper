@@ -70,5 +70,28 @@ public static class StringExtension
 
     }
 
+    public static string SepratorCurrncey(this int intCurrncey)
+    {
+        return string.Format("{0:0,0}", intCurrncey);
+    }
+
+    public static string SepratorCurrncey(this decimal intCurrncey)
+    {
+        return string.Format("{0:0,0}", intCurrncey);
+    }
+
+    public static string SepratorCurrncey(this float intCurrncey)
+    {
+        return string.Format("{0:0,0}", intCurrncey);
+    }
+
+    public static string SepratorCurrncey(this double intCurrncey)
+    {
+        return string.Format("{0:0,0}", intCurrncey);
+    }
+    public static string SepratorCurrncey(this Int64 intCurrncey)
+    {
+        return string.Format("{0:0,0}", intCurrncey);
+    }
 }
 
