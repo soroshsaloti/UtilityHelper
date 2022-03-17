@@ -1,10 +1,10 @@
-﻿using System.ComponentModel;
+﻿namespace UtilityHelper.Extensions;
+using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.IO.Compression;
 using System.Reflection;
 
-namespace UtilityHelper;
 /// <summary>
 /// This Extension Helper for developers
 /// </summary>
@@ -63,7 +63,7 @@ public static class ObjectExtension
     /// </summary>
     /// <returns>string </returns>
     public static string GetNumberByGuid()
-    { 
+    {
         return GetNumberByGuid(Guid.NewGuid());
     }
     /// <summary>

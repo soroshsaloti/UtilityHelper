@@ -1,4 +1,4 @@
-﻿namespace UtilityHelper;
+﻿namespace UtilityHelper.Extensions;
 using System; 
 public static class ConvertExtention
 {
