@@ -4,6 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<PackageId>SMA.Utitlity.Helper</PackageId>
+	<Version>6.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
