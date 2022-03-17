@@ -9,7 +9,6 @@ namespace UtilityHelper.Infostruct
     [System.AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Class, Inherited = true, AllowMultiple = false)]
     public sealed class TitleAtribute : Attribute
     {
-
         public TitleAtribute(string title)
         {
             this.Title = title;
@@ -19,8 +18,6 @@ namespace UtilityHelper.Infostruct
         {
             get; private set;
         }
-
-        // This is a named argument
 
         public string Caption { get; set; }
         public int OrderNo { get; set; }

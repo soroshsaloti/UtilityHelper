@@ -1,4 +1,4 @@
-﻿namespace UtilityHelper;
+﻿namespace UtilityHelper.Extensions;
 /// <summary>
 /// This Extension Helper for developers
 /// </summary>

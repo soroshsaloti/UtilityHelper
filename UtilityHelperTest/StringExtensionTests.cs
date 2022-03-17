@@ -1,6 +1,6 @@
 ﻿namespace UtilityHelperTest;
 using Xunit;
-using UtilityHelper;
+using UtilityHelper.Extensions;
 using FluentAssertions;
 
 public class StringExtensionTests
