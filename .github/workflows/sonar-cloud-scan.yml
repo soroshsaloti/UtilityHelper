@@ -56,5 +56,5 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"soroshsaloti_UtilityHelper" /o:"soroshsaloti" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build Blockchain.Core.sln
+          dotnet build UtilityHelper.sln
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
