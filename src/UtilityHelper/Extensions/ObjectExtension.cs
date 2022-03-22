@@ -57,15 +57,7 @@ public static class ObjectExtension
             return resultStream;
         }
     }
-
-    /// <summary>
-    /// Number generator from new GUID 
-    /// </summary>
-    /// <returns>string </returns>
-    public static string GetNumberByGuid()
-    {
-        return GetNumberByGuid(Guid.NewGuid());
-    }
+ 
     /// <summary>
     /// Number generator from GUID 
     /// </summary>
@@ -190,7 +182,7 @@ public static class ObjectExtension
     /// </summary>
     /// <param name="type">type of staruct</param>
     /// <returns>value</returns>
-    public static object? DefaultValue(this Type type)
+    private static object? DefaultValue(this Type type)
     {
 
         if (type.Name == "Guid")

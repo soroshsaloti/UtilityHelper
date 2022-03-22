@@ -88,16 +88,13 @@ public static class RegExExtesion
     }
     public static bool IsExpressionValid(this string stringForValidate, string pattern)
     {
-        bool valid = false;
+
         if (string.IsNullOrEmpty(stringForValidate))
         {
-            valid = false;
+            return false;
         }
-        else
-        {
-            valid = IsMatch(pattern, stringForValidate);
-        }
-        return valid;
+
+        return IsMatch(pattern, stringForValidate);
     }
 
 }
