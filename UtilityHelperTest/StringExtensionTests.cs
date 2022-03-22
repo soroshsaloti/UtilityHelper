@@ -77,7 +77,7 @@ public class StringExtensionTests
         var str = "235.4878";
         var result = str.ToDecimalNull();
         result.HasValue.Should().BeTrue();
-        result.Value.Should().Be((decimal)235.4878);
+        result?.Should().Be((decimal)235.4878);
     }
 
     //
@@ -108,7 +108,7 @@ public class StringExtensionTests
         var str = "235";
         var result = str.ToInt16Null();
         result.HasValue.Should().BeTrue();
-        result.Value.Should().Be((Int16)235);
+        result?.Should().Be((Int16)235);
     }
     //
     [Fact]
@@ -138,7 +138,7 @@ public class StringExtensionTests
         var str = "235";
         var result = str.ToByteNull();
         result.HasValue.Should().BeTrue();
-        result.Value.Should().Be((Byte)235);
+        result?.Should().Be((Byte)235);
     }
 
     //
@@ -169,7 +169,7 @@ public class StringExtensionTests
         var str = "235";
         var result = str.ToInt32Null();
         result.HasValue.Should().BeTrue();
-        result.Value.Should().Be((Int32)235);
+        result?.Should().Be((Int32)235);
     }
 
     //
@@ -200,7 +200,7 @@ public class StringExtensionTests
         var str = "235";
         var result = str.ToInt64Null();
         result.HasValue.Should().BeTrue();
-        result.Value.Should().Be((Int64)235);
+        result?.Should().Be((Int64)235);
     }
 
     //
@@ -231,7 +231,7 @@ public class StringExtensionTests
         var str = "235.889985";
         var result = str.ToDoubleNull();
         result.HasValue.Should().BeTrue();
-        result.Value.Should().Be((Double)235.889985);
+        result?.Should().Be((Double)235.889985);
     }
     //
     [Fact]
@@ -261,7 +261,7 @@ public class StringExtensionTests
         var str = "235.889985";
         var result = str.ToFloatNull();
         result.HasValue.Should().BeTrue();
-        result.Value.Should().Be((float)235.889985);
+        result?.Should().Be((float)235.889985);
     }
     //
     [Fact]

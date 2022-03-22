@@ -209,13 +209,13 @@ public static class StringExtension
     public static Guid ToGuid(this string arg)
     {
         Guid? guid = arg.ToGuidNull();
-        return guid.HasValue ? guid.Value : default;
+        return guid.HasValue ? guid.Value : Guid.Empty;
 
     }
 
     public static Guid? ToGuidNull(this string arg)
     {
-        Guid guid = new Guid();
+        Guid guid =Guid.Empty;
 
         if (Guid.TryParse(arg, out guid))
         {
