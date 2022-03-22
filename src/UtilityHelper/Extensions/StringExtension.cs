@@ -208,7 +208,7 @@ public static class StringExtension
 
     public static Guid ToGuid(this string arg)
     {
-        Guid? guid = arg.ToGuid();
+        Guid? guid = arg.ToGuidNull();
         return guid.HasValue ? guid.Value : default;
 
     }
