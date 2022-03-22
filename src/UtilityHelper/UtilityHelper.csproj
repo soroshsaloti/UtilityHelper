@@ -16,6 +16,15 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Extensions\**" />
+	  <Compile Remove="Infostruct\**" />
+	  <EmbeddedResource Remove="Extensions\**" />
+	  <EmbeddedResource Remove="Infostruct\**" />
+	  <None Remove="Extensions\**" />
+	  <None Remove="Infostruct\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<None Include="..\..\.editorconfig" Link=".editorconfig" />
 		<None Include="..\..\README.md">
 		  <Pack>True</Pack>
