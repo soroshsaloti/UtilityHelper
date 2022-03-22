@@ -7,10 +7,29 @@
 		<PackageId>ChopChop.Utitlity</PackageId>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<Version>6.0.2</Version>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Description>The library helper with the extension method help developer uses fast code.</Description>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/soroshsaloti/UtilityHelper</RepositoryUrl>
+		<Copyright>sorosh saloti @ 2022</Copyright>
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Extensions\**" />
+	  <Compile Remove="Infostruct\**" />
+	  <EmbeddedResource Remove="Extensions\**" />
+	  <EmbeddedResource Remove="Infostruct\**" />
+	  <None Remove="Extensions\**" />
+	  <None Remove="Infostruct\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<None Include="..\..\.editorconfig" Link=".editorconfig" />
+		<None Include="..\..\README.md">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
 	<None Include="LICENSE.txt" Pack="true" PackagePath="" />
 	</ItemGroup>
 
