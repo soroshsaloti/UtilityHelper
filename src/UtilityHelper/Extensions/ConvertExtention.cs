@@ -5,15 +5,13 @@ using UtilityHelper.Infostruct;
 
 public static class ConvertExtention
 {     
-    public static string CaptionEnum<TEnum>(this TEnum item) where TEnum : struct, IConvertible
+    public static string? CaptionEnum<TEnum>(this TEnum item) where TEnum : struct, IConvertible
     {
         if (!Enum.IsDefined(item.GetType(), item))
             return string.Empty;
-        var enumMetadataAttrib = item.GetType().GetField(item.ToString()).GetCustomAttributes<TitleAtribute>().FirstOrDefault();
-        if (enumMetadataAttrib != null)
-            return enumMetadataAttrib.Caption;
-        else
-            return item.ToString();
+        var caption = item.GetType().GetField(item.ToString()).GetCustomAttributes<TitleAtribute>().FirstOrDefault()?.Caption;
+        
+        return caption.IsNullOrEmpty() ? item.ToString() : caption;
     }
     
     public static IEnumerable<KeyValuePair<string, string>> GetTitleProperties(this Type type, bool justBrowsable = false)

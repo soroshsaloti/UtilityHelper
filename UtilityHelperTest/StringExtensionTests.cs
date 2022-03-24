@@ -291,7 +291,7 @@ public class StringExtensionTests
         var str = "{FE700FE1-F034-492A-A8C0-1A290EBFECFB}";
         var result = str.ToGuidNull();
         result.HasValue.Should().BeTrue();
-        result.Value.Should().Be(new Guid("{FE700FE1-F034-492A-A8C0-1A290EBFECFB}"));
+        result?.Should().Be(new Guid("{FE700FE1-F034-492A-A8C0-1A290EBFECFB}"));
     }
     
 }
