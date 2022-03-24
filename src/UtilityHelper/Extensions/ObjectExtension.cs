@@ -49,15 +49,13 @@ public static class ObjectExtension
     /// <returns>memory stream</returns>
     public static MemoryStream DecompressMemoryStream(this byte[] data)
     {
-        using (var compressedStream = new MemoryStream(data))
-        using (var zipStream = new GZipStream(compressedStream, CompressionMode.Decompress))
-        using (var resultStream = new MemoryStream())
-        {
-            zipStream.CopyTo(resultStream);
-            return resultStream;
-        }
+        var compressedStream = new MemoryStream(data);
+        var zipStream = new GZipStream(compressedStream, CompressionMode.Decompress);
+        var resultStream = new MemoryStream();
+        zipStream.CopyTo(resultStream);
+        return resultStream;
     }
- 
+
     /// <summary>
     /// Number generator from GUID 
     /// </summary>
